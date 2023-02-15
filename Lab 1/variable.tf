@@ -22,38 +22,25 @@ variable "aws_subnet_attributes" {
   }
 }
 
-variable "aws_vpc_cidr" {
-  type    = string
-  default = "10.0.0.0/16"
+variable "aws_vpc_attributes" {
+  type = map(any)
+  default = {
+    cidr_block = "10.0.0.0/16"
+    instance_tenancy   = "default"
+}
 }
 
-variable "Internet_IP_for_Routes" {
+variable "Internet_IP_for_Route_a_string" {
 	type = string
 	default = "0.0.0.0/0"
 }
 
-variable "Internet_IP_for_SG" {
+variable "Internet_IP_for_SG_a_list" {
 	type = list
 	default = ["0.0.0.0/0"]
 }
 
-variable "Allow_ICMP_Echo_Req" {
-  type = map(number)
-  default = {
-    from_port = 8
-    to_port   = 8
-  }
-}
-
-variable "Allow_SSH" {
-  type = map(number)
-  default = {
-    from_port = 22
-    to_port   = 22
-  }
-}
-
-variable "Allow_Internet" {
+variable "aws_security_group_rule_Allow_Internet_Incoming_attributes" {
   type = map(number)
   default = {
     from_port = 0
@@ -61,11 +48,20 @@ variable "Allow_Internet" {
   }
 }
 
-variable "aws_instance" {
+variable "aws_security_group_rule_Allow_Internet_Outgoing_attributes" {
+  type = map(number)
+  default = {
+    from_port = 0
+    to_port   = 0
+  }
+}
+
+variable "aws_instance_AWS_Linux_attributes" {
   type = map(any)
   default = {
     ami               = "ami-08cd358d745620807"
     availability_zone = "eu-west-2a"
     instance_type     = "t2.micro"
+    tenancy = "default"
   }
 }
