@@ -22,7 +22,7 @@ resource "aws_vpc" "Lab_1_VPC" {
 
 resource "aws_subnet" "Lab_1_Subnet" {
   vpc_id                  = aws_vpc.Lab_1_VPC.id
-  cidr_block              = var.aws_subnet_attributes.cidr_block
+  cidr_block              = var.aws_subnet_attributes
   map_public_ip_on_launch = "true"
   availability_zone       = var.availability_zone
 
