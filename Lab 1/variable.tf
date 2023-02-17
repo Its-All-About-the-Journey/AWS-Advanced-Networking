@@ -27,7 +27,7 @@ variable "aws_vpc_attributes" {
 }
 }
 
-variable “availability_zone” {
+variable "availability_zone" {
   type = string
   default = "eu-west-2a"
 }
