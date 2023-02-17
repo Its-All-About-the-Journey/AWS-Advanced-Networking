@@ -46,7 +46,6 @@ variable "aws_instance_AWS_Linux_attributes" {
   type = map(any)
   default = {
     ami               = "ami-08cd358d745620807"
-    availability_zone = "eu-west-2a"
     instance_type     = "t2.micro"
     tenancy = "default"
   }
