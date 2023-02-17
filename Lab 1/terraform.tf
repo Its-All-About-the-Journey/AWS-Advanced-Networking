@@ -1,11 +1,4 @@
 terraform {
-#  backend "remote" {
-#    hostname     = "app.terraform.io"
-#    organization = ""
-#    workspaces {
-#      name = "Lab-1"
-#    }
-#  }
 
     backend "local" {
       path = ""
