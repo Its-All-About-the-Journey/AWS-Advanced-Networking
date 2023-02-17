@@ -15,11 +15,8 @@ variable "region" {
 }
 
 variable "aws_subnet_attributes" {
-  type = map(any)
-  default = {
-    cidr_block        = "10.0.0.0/24"
-    availability_zone = "eu-west-2a"
-  }
+  type = string
+  default = "10.0.0.0/24"
 }
 
 variable "aws_vpc_attributes" {
@@ -30,6 +27,11 @@ variable "aws_vpc_attributes" {
 }
 }
 
+variable “availability_zone” {
+  type = string
+  default = "eu-west-2a"
+}
+
 variable "Internet_IP_for_Route_a_string" {
 	type = string
 	default = "0.0.0.0/0"
@@ -38,22 +40,6 @@ variable "Internet_IP_for_Route_a_string" {
 variable "Internet_IP_for_SG_a_list" {
 	type = list
 	default = ["0.0.0.0/0"]
-}
-
-variable "aws_security_group_rule_Allow_Internet_Incoming_attributes" {
-  type = map(number)
-  default = {
-    from_port = 0
-    to_port   = 0
-  }
-}
-
-variable "aws_security_group_rule_Allow_Internet_Outgoing_attributes" {
-  type = map(number)
-  default = {
-    from_port = 0
-    to_port   = 0
-  }
 }
 
 variable "aws_instance_AWS_Linux_attributes" {
