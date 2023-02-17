@@ -4,12 +4,6 @@ provider "aws" {
   #shared_credentials_files = "C:\\Users\\Admin\\.aws\\credentials"
   access_key = var.access_key
   secret_key = var.secret_key
-  default_tags {
-    tags = {
-      Enviroment  = terraform.workspace
-      Provisioned = "Terraform"
-    }
-  }
 }
 
 resource "aws_vpc" "Lab_2_VPC" {
