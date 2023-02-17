@@ -24,7 +24,7 @@ resource "aws_subnet" "Lab_1_Subnet" {
   vpc_id                  = aws_vpc.Lab_1_VPC.id
   cidr_block              = var.aws_subnet_attributes.cidr_block
   map_public_ip_on_launch = "true"
-  availability_zone       = var.aws_subnet_attributes.availability_zone
+  availability_zone       = var.availability_zone
 
   tags = {
     name           = "Lab_1_Subnet"
@@ -56,7 +56,7 @@ resource "aws_instance" "AWS_Linux" {
   ami                    = var.aws_instance_AWS_Linux_attributes.ami
   instance_type          = var.aws_instance_AWS_Linux_attributes.instance_type
   tenancy                = var.aws_instance_AWS_Linux_attributes.tenancy
-  availability_zone      = var.aws_instance_AWS_Linux_attributes.availability_zone
+  availability_zone      = var.availability_zone
 
   tags = {
     name           = "Lab_1_AWS_Linux"
