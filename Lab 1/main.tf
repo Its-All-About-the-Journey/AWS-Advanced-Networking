@@ -52,14 +52,6 @@ resource "aws_default_route_table" "Lab_1_RT" {
   }
 }
 
-resource "aws_eip" "Lab_1_EIP" {
-  instance = aws_instance.AWS_Linux.id
-  vpc      = true
-  tags = {
-    name           = "Lab_1_EIP"
-  }
-}
-
 resource "aws_instance" "AWS_Linux" {
   ami                    = var.aws_instance_AWS_Linux_attributes.ami
   instance_type          = var.aws_instance_AWS_Linux_attributes.instance_type
@@ -68,6 +60,14 @@ resource "aws_instance" "AWS_Linux" {
 
   tags = {
     name           = "Lab_1_AWS_Linux"
+  }
+}
+
+resource "aws_eip" "Lab_1_EIP" {
+  instance = aws_instance.AWS_Linux.id
+  vpc      = true
+  tags = {
+    name           = "Lab_1_EIP"
   }
 }
 
