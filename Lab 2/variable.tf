@@ -33,7 +33,7 @@ variable "Internet_IP_for_Route_a_string" {
 }
 
 
-variable "aws_instance_Bastion_attributes" {
+variable "aws_instance_attributes" {
   type = map(any)
   default = {
     ami               = "ami-08cd358d745620807"
@@ -94,17 +94,6 @@ variable "Linux_ports_attributes" {
   default = {
     from_port = 32768
     to_port   = 61000
-  }
-}
-
-variable "aws_instance_Private_Instance_attributes" {
-  type = map(any)
-  default = {
-    ami               = "ami-08cd358d745620807"
-    instance_type     = "t2.micro"
-    availability_zone = "eu-west-2a"
-    key_name          = ""
-    tenancy           = "default"
   }
 }
 

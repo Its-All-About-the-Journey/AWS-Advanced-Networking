@@ -59,11 +59,11 @@ resource "aws_route_table_association" "Public_A_RT_Association_A" {
 }
 
 resource "aws_instance" "Bastion" {
-  ami               = var.aws_instance_Bastion_attributes.ami
-  instance_type     = var.aws_instance_Bastion_attributes.instance_type
-  availability_zone = var.aws_instance_Bastion_attributes.availability_zone
-  key_name          = var.aws_instance_Bastion_attributes.key_name
-  tenancy           = var.aws_instance_Bastion_attributes.tenancy
+  ami               = var.aws_instance_attributes.ami
+  instance_type     = var.aws_instance_attributes.instance_type
+  availability_zone = var.aws_instance_attributes.availability_zone
+  key_name          = var.aws_instance_attributes.key_name
+  tenancy           = var.aws_instance_attributes.tenancy
   subnet_id         = aws_subnet.Public_A.id
   security_groups   = ["${aws_security_group.SG_bastion.id}"]
 }
@@ -168,11 +168,11 @@ resource "aws_network_acl_association" "Private_NACL_Association" {
 }
 
 resource "aws_instance" "Private_Instance" {
-  ami               = var.aws_instance_Private_Instance_attributes.ami
-  instance_type     = var.aws_instance_Private_Instance_attributes.instance_type
-  availability_zone = var.aws_instance_Private_Instance_attributes.availability_zone
-  key_name          = var.aws_instance_Private_Instance_attributes.key_name
-  tenancy           = var.aws_instance_Private_Instance_attributes.tenancy
+  ami               = var.aws_instance_attributes.ami
+  instance_type     = var.aws_instance_attributes.instance_type
+  availability_zone = var.aws_instance_attributes.availability_zone
+  key_name          = var.aws_instance_attributes.key_name
+  tenancy           = var.aws_instance_attributes.tenancy
   subnet_id         = aws_subnet.Private_A.id
   security_groups   = ["${aws_security_group.SG_Private.id}"]
 }
