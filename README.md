@@ -3,4 +3,5 @@ These are hashicorp scripts for the labs in the AWS Advanced Networking course o
 
 # Lab 1
 ## Create an Instance with an Elastic IP Attached using Terraform
-![Screenshot (892)](https://user-images.githubusercontent.com/30233365/221899888-b1121f1f-2e92-4d2c-a4f1-27a2f3e443bd.png)
+![Screenshot (888)](https://user-images.githubusercontent.com/30233365/221901762-48629ad1-ab9f-4a34-8af5-bbfdfd71c53a.png)
+
