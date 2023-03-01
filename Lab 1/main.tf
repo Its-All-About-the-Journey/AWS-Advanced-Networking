@@ -2,8 +2,8 @@
 provider "aws" {
   region = "eu-west-2"
   #shared_credentials_files = "C:\\Users\\Admin\\.aws\\credentials"
-  access_key = var.access_key
-  secret_key = var.secret_key
+  access_key = ""
+  secret_key = ""
 }
 
 # Create VPC
