@@ -1,6 +1,6 @@
 # Configure the AWS Provider
 provider "aws" {
-  region = "eu-west-2"
+  region = "us-west-2"
   access_key = ""
   secret_key = ""
 }
@@ -25,7 +25,7 @@ resource "aws_internet_gateway" "VPC_A_IGW" {
 resource "aws_subnet" "VPC_A_Public_Subnet_A" {
   vpc_id                  = aws_vpc.VPC_A.id
   cidr_block              = "10.0.20.0/24"
-  availability_zone       = "eu-west-2a"
+  availability_zone       = "us-west-2a"
   map_public_ip_on_launch = "true"
 
   tags = {
@@ -54,7 +54,7 @@ resource "aws_route_table_association" "VPC_A_Public_RT_A_Association_A" {
 resource "aws_instance" "Bastion" {
   ami               = "ami-08cd358d745620807"
   instance_type     = "t2.micro"
-  availability_zone = "eu-west-2a"
+  availability_zone = "us-west-2a"
   key_name          = ""
   tenancy           = "default"
   subnet_id         = aws_subnet.VPC_A_Public_Subnet_A.id
@@ -92,7 +92,7 @@ resource "aws_security_group" "SG_Bastion" {
 resource "aws_subnet" "VPC_A_Private_Subnet_A" {
   vpc_id                  = aws_vpc.VPC_A.id
   cidr_block              = "10.0.10.0/24"
-  availability_zone       = "eu-west-2a"
+  availability_zone       = "us-west-2a"
   map_public_ip_on_launch = "false"
 
   tags = {
@@ -179,7 +179,7 @@ resource "aws_network_acl_association" "VPC_A_Private_NACL_A_Association" {
 resource "aws_instance" "VPC_A_Private_Subnet_A_Instance_A" {
   ami               = "ami-08cd358d745620807"
   instance_type     = "t2.micro"
-  availability_zone = "eu-west-2a"
+  availability_zone = "us-west-2a"
   key_name          = ""
   tenancy           = "default"
   subnet_id         = aws_subnet.VPC_A_Private_Subnet_A.id
