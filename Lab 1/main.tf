@@ -1,6 +1,6 @@
 # Configure the AWS Provider
 provider "aws" {
-  region = "us-west-1"
+  region = "us-west-2"
   #shared_credentials_files = "C:\\Users\\Admin\\.aws\\credentials"
   access_key = ""
   secret_key = ""
@@ -20,7 +20,7 @@ resource "aws_vpc" "VPC_A" {
 resource "aws_subnet" "VPC_A_Subnet_A" {
   vpc_id                  = aws_vpc.VPC_A.id
   cidr_block              = "10.0.0.0/24"
-  availability_zone       = "us-west-1a"
+  availability_zone       = "us-west-2a"
 
   tags = {
     name = "VPC_A_Subnet_A"
@@ -105,7 +105,7 @@ resource "aws_instance" "VPC_A_Subnet_A_AWS_Linux" {
   ami               = "ami-08cd358d745620807"
   instance_type     = "t2.micro"
   tenancy           = "default"
-  availability_zone = "us-west-1a"
+  availability_zone = "us-west-2a"
   subnet_id = aws_subnet.VPC_A_Subnet_A.id
 
   tags = {
