@@ -52,7 +52,7 @@ resource "aws_route_table_association" "VPC_A_Public_RT_A_Association_A" {
 }
 
 resource "aws_instance" "Bastion" {
-  ami               = "ami-08cd358d745620807"
+  ami               = "ami-0b029b1931b347543"
   instance_type     = "t2.micro"
   availability_zone = "us-west-2a"
   key_name          = ""
@@ -177,7 +177,7 @@ resource "aws_network_acl_association" "VPC_A_Private_NACL_A_Association" {
 }
 
 resource "aws_instance" "VPC_A_Private_Subnet_A_Instance_A" {
-  ami               = "ami-08cd358d745620807"
+  ami               = "ami-0b029b1931b347543"
   instance_type     = "t2.micro"
   availability_zone = "us-west-2a"
   key_name          = ""
