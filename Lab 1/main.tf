@@ -102,7 +102,7 @@ resource "aws_default_route_table" "VPC_A_Default_RT" {
 
 # Create AWS instance
 resource "aws_instance" "VPC_A_Subnet_A_AWS_Linux" {
-  ami               = "ami-08cd358d745620807"
+  ami               = "ami-0b029b1931b347543"
   instance_type     = "t2.micro"
   tenancy           = "default"
   availability_zone = "us-west-2a"
