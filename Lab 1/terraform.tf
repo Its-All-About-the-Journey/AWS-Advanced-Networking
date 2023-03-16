@@ -1,7 +1,7 @@
 terraform {
 
     backend "local" {
-      path = ""
+      path = "/mnt/c/Users/Admin/Documents//AWS Advanced Networking/Lab 1/terraform.tfstate"
     }
 
   required_providers {

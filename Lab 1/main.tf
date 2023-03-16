@@ -1,7 +1,6 @@
 # Configure the AWS Provider
 provider "aws" {
   region = "us-west-2"
-  #shared_credentials_files = "C:\\Users\\Admin\\.aws\\credentials"
   access_key = ""
   secret_key = ""
 }
