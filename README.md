@@ -16,4 +16,4 @@ These are hashicorp scripts for the labs in the AWS Advanced Networking course o
 # Lab 4
 ## Create a Gateway VPC Endpoint for S3
 I decided to improve my diagrams by removing unimportant labels.
-![Screenshot (907)](https://user-images.githubusercontent.com/30233365/229312018-305a4c97-3faa-4c40-acb8-88cdab2adb17.png)
+![Screenshot (908)](https://user-images.githubusercontent.com/30233365/229312291-f0c71c3a-0acf-4cae-92ee-04b81e35833e.png)
