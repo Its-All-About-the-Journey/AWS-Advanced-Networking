@@ -1,5 +1,8 @@
+##Documentations
+https://dev.to/charlesuneze
+
 # AWS-Advanced-Networking
-These are hashicorp scripts for the labs in the AWS Advanced Networking course on cloudacademy.com
+These are hashicorp scripts for the labs in the AWS Advanced Networking course on cloudacademy.com and also other sources too.
 
 # Lab 1
 ## Create an Instance with an Elastic IP Attached using Terraform
