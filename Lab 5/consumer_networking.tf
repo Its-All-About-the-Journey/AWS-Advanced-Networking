@@ -29,24 +29,8 @@ resource "aws_subnet" "public_subnet_for_Consumer_VPC_AZ_2A" {
 
 resource "aws_security_group" "Consumer_VPC_SG" {
   name        = "Consumer_VPC_SG"
-  description = "Allow TLS, HTTP, and SSH inbound traffic"
+  description = "Allow SSH and ICMP inbound traffic"
   vpc_id      = aws_vpc.Consumer_VPC.id
-
-  ingress {
-    description = "TLS into VPC"
-    from_port   = 443
-    to_port     = 443
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  ingress {
-    description = "HTTP into VPC"
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
 
   ingress {
     description = "SSH into VPC"
@@ -94,11 +78,15 @@ resource "aws_route_table_association" "Consumer_VPC_RT_association" {
   route_table_id = aws_route_table.Consumer_VPC_RT.id
 }
 
+# “acceptance_required = false” specifies that you don’t need to log
+# into the console to accept the request
 resource "aws_vpc_endpoint_service" "vpc_endpoint_service" {
   acceptance_required        = false
   network_load_balancer_arns = [aws_lb.network_load_balancer.arn]
 }
 
+# “auto-accept = true” specifies that the
+# request be accepted via Terraform
 resource "aws_vpc_endpoint" "vpce" {
   auto_accept       = true
   vpc_id            = aws_vpc.Consumer_VPC.id
