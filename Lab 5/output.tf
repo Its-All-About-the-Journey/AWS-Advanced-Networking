@@ -7,7 +7,7 @@ output "vpce_interface_ids" {
   value = join(",", aws_vpc_endpoint.vpce.network_interface_ids)
 }
 
-# copy the interface ID and uncomment the code below.
+# Copy the interface ID output from the CLI and uncomment the code below.
 # Add the ID into the data block. Then do a 
 # “terraform refresh” to get the private IP address
 # of the vpc-endpoint interface so you can SSH into it from
