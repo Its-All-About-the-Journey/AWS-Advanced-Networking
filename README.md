@@ -27,5 +27,5 @@ I decided to improve my diagrams by removing unimportant labels.
 ![Screenshot (915)](https://user-images.githubusercontent.com/30233365/231617757-8d6b4d3f-3c5b-4fe2-a24c-fc0912a7420c.png)
 
 # Lab 6
-## Create an Application Load Balancer to 4 instances in different AZs
+## Create an Application Load Balancer and 4 instances in different AZs
 ![Screenshot (916)](https://user-images.githubusercontent.com/30233365/232566972-248fdcf3-7f0d-4117-a1d1-24768c92416a.png)
