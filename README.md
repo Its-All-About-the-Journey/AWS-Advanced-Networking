@@ -1,5 +1,6 @@
-## Documentations
+## Extra Documentations
 https://dev.to/charlesuneze
+It only contains from Lab 1-3. Had to leave it and document more in my code, and also focus more on Github.
 
 # AWS-Advanced-Networking
 These are hashicorp scripts for the labs in the AWS Advanced Networking course on cloudacademy.com and also other sources too.
@@ -24,3 +25,7 @@ I decided to improve my diagrams by removing unimportant labels.
 # Lab 5
 ## Create an AWS Private Link
 ![Screenshot (915)](https://user-images.githubusercontent.com/30233365/231617757-8d6b4d3f-3c5b-4fe2-a24c-fc0912a7420c.png)
+
+# Lab 6
+## Create an Application Load Balancer to 4 instances in different AZs
+![Screenshot (916)](https://user-images.githubusercontent.com/30233365/232566972-248fdcf3-7f0d-4117-a1d1-24768c92416a.png)
