@@ -29,3 +29,7 @@ I decided to improve my diagrams by removing unimportant labels.
 # Lab 6
 ## Create an Application Load Balancer and 4 instances in different AZs
 ![Screenshot (916)](https://user-images.githubusercontent.com/30233365/232566972-248fdcf3-7f0d-4117-a1d1-24768c92416a.png)
+
+# Lab 7
+## Client VPN Configuration and VPC Peeering Across and Within Accounts
+![Screenshot (927)](https://user-images.githubusercontent.com/30233365/235446505-66068163-78f7-4db5-a0ff-5431dce76273.png)
