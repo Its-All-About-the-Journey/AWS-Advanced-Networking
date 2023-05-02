@@ -5,19 +5,16 @@ resource "aws_s3_bucket" "My_bucket" {
   }
 }
 
-resource "aws_s3_bucket_public_access_block" "public_bucket" {
+resource "aws_s3_bucket_acl" "my_bucket_acl" {
   bucket = aws_s3_bucket.My_bucket.id
-
-  block_public_acls       = false
-  block_public_policy     = false
-  ignore_public_acls      = false
-  restrict_public_buckets = false
+  acl    = "public-read"
 }
 
 resource "aws_s3_object" "object" {
   bucket = "my-test-bucket-for-vpc-endpoints"
   key    = "curl.txt"
   source = "curl.txt"
+  acl    = "public-read"
 
   etag = filemd5("curl.txt")
 }
