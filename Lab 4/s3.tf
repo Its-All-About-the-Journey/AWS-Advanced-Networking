@@ -13,7 +13,7 @@ resource "aws_s3_object" "object" {
   etag = filemd5("curl.txt")
 }
 
-resource "aws_s3_bucket_public_access_block" "example" {
+resource "aws_s3_bucket_public_access_block" "public_bucket_access" {
   bucket = aws_s3_bucket.My_bucket.bucket
 
   block_public_acls       = false
