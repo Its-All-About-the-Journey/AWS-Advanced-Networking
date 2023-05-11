@@ -130,7 +130,7 @@ resource "aws_lb_target_group" "HTTP" {
   ip_address_type = "ipv4"
 }
 
-# Since two instances in seperate AZs are targeted, two target group attachment is needed.
+# Since four instances in seperate AZs are targeted, four target group attachment is needed.
 resource "aws_lb_target_group_attachment" "HTTP_Fleet_1" {
   count = 4
   target_group_arn = aws_lb_target_group.HTTP.arn
