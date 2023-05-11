@@ -132,14 +132,14 @@ resource "aws_lb_target_group" "HTTP" {
 
 # Since two instances in seperate AZs are targeted, two target group attachment is needed.
 resource "aws_lb_target_group_attachment" "HTTP_Fleet_1" {
-  count = 2
+  count = 4
   target_group_arn = aws_lb_target_group.HTTP.arn
   target_id        = aws_instance.Public_Instances_Fleet_1[count.index].id
   port             = 80
 }
 
 resource "aws_lb_target_group_attachment" "HTTP_Fleet_2" {
-  count = 2
+  count = 4
   target_group_arn = aws_lb_target_group.HTTP.arn
   target_id        = aws_instance.Public_Instances_Fleet_2[count.index].id
   port             = 80
