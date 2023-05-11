@@ -138,13 +138,6 @@ resource "aws_lb_target_group_attachment" "HTTP_Fleet_1" {
   port             = 80
 }
 
-resource "aws_lb_target_group_attachment" "HTTP_Fleet_2" {
-  count = 4
-  target_group_arn = aws_lb_target_group.HTTP.arn
-  target_id        = aws_instance.Public_Instances_Fleet_2[count.index].id
-  port             = 80
-}
-
 # It tells the load balancer to listen for HTTP
 resource "aws_lb_listener" "HTTP" {
   load_balancer_arn = aws_lb.My_App_LB.arn
