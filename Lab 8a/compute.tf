@@ -317,7 +317,7 @@ resource "aws_route53_record" "ACM" {
   }
 
   allow_overwrite = true
-  name            = each.value.name # www.charlesuneze.link
+  name            = each.value.name # domain name
   records         = [each.value.record]
   type            = each.value.type # CNAME 
   ttl             = 60
