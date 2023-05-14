@@ -33,3 +33,8 @@ I decided to improve my diagrams by removing unimportant labels.
 # Lab 7
 ## Client VPN Configuration and VPC Peering Across and Within Accounts
 ![Screenshot (927)](https://user-images.githubusercontent.com/30233365/235446505-66068163-78f7-4db5-a0ff-5431dce76273.png)
+
+# Lab 8 a&b
+## Design Patterns for Cloudfront
+### Using S3 as Origin
+![Screenshot (932)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/0888c996-82cc-488e-b895-2a4f1bf759db)
