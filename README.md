@@ -38,3 +38,7 @@ I decided to improve my diagrams by removing unimportant labels.
 ## Design Patterns for Cloudfront
 ### Using S3 as Origin
 ![Screenshot (932)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/0888c996-82cc-488e-b895-2a4f1bf759db)
+### Using ELB as Origin
+![Screenshot (933)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/91c02d45-363d-4b28-abaa-8a85fc77884c)
+
+
