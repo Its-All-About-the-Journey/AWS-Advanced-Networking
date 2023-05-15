@@ -39,7 +39,7 @@ I decided to improve my diagrams by removing unimportant labels.
 ### Using S3 as Origin
 ![Screenshot (932)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/0888c996-82cc-488e-b895-2a4f1bf759db)
 ### Using ELB as Origin
-![Screenshot (934)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/21d55da6-b6bf-455b-a5f0-b51d833379c3)
+![Screenshot (935)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/9830e934-8f5d-4a69-88dd-07cf1c91659e)
 
 
 
