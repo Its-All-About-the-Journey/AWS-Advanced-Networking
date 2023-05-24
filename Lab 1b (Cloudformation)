@@ -1,0 +1,118 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description:
+  Deploy a VPC and add resources to it
+
+Parameters:
+  AvailabilityZone:
+    Type: String
+    Default: us-west-2a
+  
+Resources:
+  MyVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: "10.0.0.0/16"
+      InstanceTenancy: default
+      Tags: 
+        - Key: Name
+          Value: MyVPC
+
+  MyPublicSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      AvailabilityZone: !Ref AvailabilityZone
+      CidrBlock: "10.0.1.0/24"
+      MapPublicIpOnLaunch: true
+      Tags: 
+        - Key: Name
+          Value: MyPublicSubnet
+      VpcId: !Ref MyVPC # Required
+
+  MyInternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags: 
+        - Key: Name
+          Value: MyInternetGateway
+    DependsOn: MyVPC
+
+  MyInternetGatewayAttachment:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      InternetGatewayId: !Ref MyInternetGateway
+      VpcId: !Ref MyVPC
+
+  MyPublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      Tags: 
+        - Key: Name
+          Value: MyRouteTable
+      VpcId: !Ref MyVPC # Required
+
+  MyRoute:
+    Type: AWS::EC2::Route
+    Properties:
+      DestinationCidrBlock: "0.0.0.0/0"
+      GatewayId: !Ref MyInternetGateway
+      RouteTableId: !Ref MyPublicRouteTable # Required
+    DependsOn: MyVPC
+
+  SubnetRouteTableAssociation:
+      Type: AWS::EC2::SubnetRouteTableAssociation
+      Properties:
+        RouteTableId: !Ref MyPublicRouteTable # Required
+        SubnetId: !Ref MyPublicSubnet # Required
+      DependsOn: MyVPC
+
+  MySecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: "Accept All Traffic" # Required
+      GroupName: "MySecurtyGroup"
+      SecurityGroupEgress: 
+        - IpProtocol: "-1"
+          FromPort: 0
+          ToPort: 0
+          CidrIp: 0.0.0.0/0
+      SecurityGroupIngress: 
+        - IpProtocol: "-1"
+          FromPort: 0
+          ToPort: 0
+          CidrIp: 0.0.0.0/0
+      Tags: 
+        - Key: Name
+          Value: MySecurityGroup
+      VpcId: !Ref MyVPC
+
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone: !Ref AvailabilityZone
+      ImageId: "ami-0b029b1931b347543"
+      InstanceType: "t2.micro"
+      KeyName: ""
+      SecurityGroupIds: 
+        - !Ref MySecurityGroup
+      SubnetId: !Ref MyPublicSubnet
+      Tags: 
+        - Key: Name
+          Value: MyInstance
+      Tenancy: "default"
+    DependsOn: MyVPC
+
+  MyEIP:
+    Type: AWS::EC2::EIP
+    Properties:
+      Domain: vpc
+    DependsOn: MyVPC
+
+  MyEIPAssociation:
+    Type: AWS::EC2::EIPAssociation
+    Properties:
+      AllocationId: !GetAtt MyEIP.AllocationId
+      InstanceId: !Ref MyInstance
+
+Outputs:
+  MyEIPPublicIP:
+    Value: !GetAtt MyEIP.PublicIp
