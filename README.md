@@ -41,5 +41,11 @@ I decided to improve my diagrams by removing unimportant labels.
 ### Using ELB as Origin
 ![Screenshot (935)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/9830e934-8f5d-4a69-88dd-07cf1c91659e)
 
+# Lab 9
+## Transit Gateway Peering
+![Screenshot (941)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/53ac326f-e2ca-4c13-b784-9316fcc35a5f)
+ng
+
+
 
 
