@@ -1,0 +1,43 @@
+!CSR 1
+interface Tunnel 1
+ ip address 169.254.6.1 255.255.255.248
+ tunnel source GigabitEthernet 1
+ tunnel destination 172.19.1.1
+
+
+router bgp 64512
+ router bgp 64512
+ bgp log-neighbor-changes
+ neighbor 169.254.6.2 remote-as 64512
+ neighbor 169.254.6.2 ebgp-multihop 255
+ neighbor 169.254.6.3 remote-as 64512
+ neighbor 169.254.6.3 ebgp-multihop 255
+ !
+ address-family ipv4
+  network 169.254.6.0 mask 255.255.255.240
+  neighbor 169.254.6.2 activate
+  neighbor 169.254.6.3 activate
+ exit-address-family
+
+----------------------------------------------------------------------------------
+
+!CSR 2
+interface Tunnel 1
+ ip address 169.254.7.1 255.255.255.248
+ tunnel source GigabitEthernet 1
+ tunnel destination 172.20.1.1
+
+
+router bgp 64512
+ router bgp 64512
+ bgp log-neighbor-changes
+ neighbor 169.254.7.2 remote-as 64512
+ neighbor 169.254.7.2 ebgp-multihop 255
+ neighbor 169.254.7.3 remote-as 64512
+ neighbor 169.254.7.3 ebgp-multihop 255
+ !
+ address-family ipv4
+  network 169.254.7.0 mask 255.255.255.240
+  neighbor 169.254.7.2 activate
+  neighbor 169.254.7.3 activate
+ exit-address-family
