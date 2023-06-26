@@ -46,6 +46,9 @@ I decided to improve my diagrams by removing unimportant labels.
 ![Screenshot (941)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/53ac326f-e2ca-4c13-b784-9316fcc35a5f)
 ng
 
-
+# Lab 10
+## Simplify SD-WAN connectivity with AWS Transit Gateway Connect
+<img width="913" alt="tgw-connect-ha-v3" src="https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/f67d9cfd-c577-41a6-a1e4-9587f744314c">
+img src: AWS
 
 
