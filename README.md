@@ -52,6 +52,6 @@ ng
 img src: AWS
 
 # Lab 11
-## Using AWS WAF to Filter Inbound IP Addresses
+## Centralized inbound traffic inspection using AWS WAF (Filter Inbound IP Addresses)
 ![Screenshot (944)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/ea83eaf9-97a3-4a14-ba40-cf183705f8b9)
 
