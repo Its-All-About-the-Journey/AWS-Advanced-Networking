@@ -53,4 +53,5 @@ img src: AWS
 
 # Lab 11
 ## Using AWS WAF to Filter Inbound IP Addresses
-![Screenshot (943)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/b18259e6-a4a7-48d1-b88a-1942da7687a9)
+![Screenshot (944)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/ea83eaf9-97a3-4a14-ba40-cf183705f8b9)
+
