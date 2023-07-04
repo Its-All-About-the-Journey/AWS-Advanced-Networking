@@ -128,6 +128,7 @@ resource "aws_instance" "Bastion" {
 
 resource "aws_ec2_transit_gateway" "TGW_Lab" {
   description                     = "the labs transit gateway"
+  auto_accept_shared_attachments  = "enable"
   default_route_table_association = "enable"
   default_route_table_propagation = "enable"
 
