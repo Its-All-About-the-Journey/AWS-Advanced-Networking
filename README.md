@@ -58,3 +58,7 @@ img src: AWS
 ## Centralized inbound traffic inspection using AWS WAF (Filter Inbound IP Addresses)
 ![Screenshot (944)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/ea83eaf9-97a3-4a14-ba40-cf183705f8b9)
 
+# Lab 12
+## Centralized NAT gateway using Transit Gateway
+![Capture](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/2466c4aa-c99e-49e7-8730-7efa80ed5891)
+img src: AWS
