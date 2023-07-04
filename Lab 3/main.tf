@@ -128,8 +128,8 @@ resource "aws_instance" "Bastion" {
 
 resource "aws_ec2_transit_gateway" "TGW_Lab" {
   description                     = "the labs transit gateway"
-  default_route_table_association = "disable"
-  default_route_table_propagation = "disable"
+  default_route_table_association = "enable"
+  default_route_table_propagation = "enable"
 
   tags = {
     Name = "TGW_Lab"
@@ -153,6 +153,10 @@ resource "aws_default_route_table" "VPC_A_RT" {
     cidr_block         = "10.1.0.0/16"
     transit_gateway_id = aws_ec2_transit_gateway.TGW_Lab.id
   }
+
+  depends_on = [
+    aws_ec2_transit_gateway.TGW_Lab
+  ]
 
   tags = {
     Name = "VPC_A_RT"
@@ -199,6 +203,10 @@ resource "aws_default_route_table" "VPC_B_RT" {
     cidr_block         = "10.1.0.0/16"
     transit_gateway_id = aws_ec2_transit_gateway.TGW_Lab.id
   }
+
+  depends_on = [
+    aws_ec2_transit_gateway.TGW_Lab
+  ]
 
   tags = {
     Name = "VPC_B_RT"
@@ -311,6 +319,10 @@ resource "aws_default_route_table" "VPC_C_RT" {
     transit_gateway_id = aws_ec2_transit_gateway.TGW_Lab.id
   }
 
+  depends_on = [
+    aws_ec2_transit_gateway.TGW_Lab
+  ]
+
   tags = {
     Name = "VPC_C_RT"
   }
@@ -389,55 +401,6 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "TGA_VPC_C" {
   tags = {
     Name = "TGA_VPC_C"
   }
-}
-
-resource "aws_ec2_transit_gateway_route_table" "TGW_RTB_VPC_B_C" {
-  transit_gateway_id = aws_ec2_transit_gateway.TGW_Lab.id
-
-  tags = {
-    "name" = "TGW_RTB_VPC_B_C"
-  }
-}
-
-resource "aws_ec2_transit_gateway_route" "TGW_RTB_VPC_B_C_Route_1" {
-  destination_cidr_block         = "0.0.0.0/0"
-  transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.TGA_VPC_A.id
-  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.TGW_RTB_VPC_B_C.id
-}
-
-resource "aws_ec2_transit_gateway_route_table_association" "TGW_RTB_VPC_B_C_Association_1" {
-  transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.TGA_VPC_B.id
-  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.TGW_RTB_VPC_B_C.id
-}
-
-resource "aws_ec2_transit_gateway_route_table_association" "TGW_RTB_VPC_B_C_Association_2" {
-  transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.TGA_VPC_C.id
-  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.TGW_RTB_VPC_B_C.id
-}
-
-resource "aws_ec2_transit_gateway_route_table" "TGW_RTB_VPC_A" {
-  transit_gateway_id = aws_ec2_transit_gateway.TGW_Lab.id
-
-  tags = {
-    "name" = "TGW_RTB_VPC_A"
-  }
-}
-
-resource "aws_ec2_transit_gateway_route" "TGW_RTB_VPC_A_Route_1" {
-  destination_cidr_block         = "10.0.0.0/16"
-  transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.TGA_VPC_B.id
-  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.TGW_RTB_VPC_A.id
-}
-
-resource "aws_ec2_transit_gateway_route" "TGW_RTB_VPC_A_Route_2" {
-  destination_cidr_block         = "10.1.0.0/16"
-  transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.TGA_VPC_C.id
-  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.TGW_RTB_VPC_A.id
-}
-
-resource "aws_ec2_transit_gateway_route_table_association" "TGW_RTB_VPC_A_Association_1" {
-  transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.TGA_VPC_A.id
-  transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.TGW_RTB_VPC_A.id
 }
 
 resource "aws_iam_role" "role_lab_flow_logs" {
