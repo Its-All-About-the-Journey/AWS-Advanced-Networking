@@ -40,7 +40,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "VPC_B" {
 
 
 resource "aws_ec2_transit_gateway_vpc_attachment" "Egress_VPC" {
-  subnet_ids         = [aws_subnet.Egress_VPC_TGW_Subnet_1_AZ_A.id, aws_subnet.Egress_VPC_NGW_Subnet_2_AZ_B]
+  subnet_ids         = [aws_subnet.Egress_VPC_TGW_Subnet_1_AZ_A.id, aws_subnet.Egress_VPC_NGW_Subnet_2_AZ_B.id]
   transit_gateway_id = aws_ec2_transit_gateway.TGW.id
   vpc_id             = aws_vpc.Egress_VPC.id
 }
