@@ -38,7 +38,7 @@ resource "aws_vpc" "VPC_B" {
 resource "aws_subnet" "VPC_B_Workload_and_TGW_Subnet" {
   vpc_id     = aws_vpc.VPC_B.id
   cidr_block = "10.2.1.0/24"
-  availability_zone = "us-west-2a"
+  availability_zone = "us-west-2b"
 
   tags = {
     Name = "VPC_B_Workload_and_TGW_Subnet"
