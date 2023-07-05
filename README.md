@@ -62,3 +62,7 @@ img src: AWS
 ## Centralized NAT gateway using Transit Gateway
 ![Capture](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/2466c4aa-c99e-49e7-8730-7efa80ed5891)
 img src: AWS
+
+# Lab 13
+## AWS Network Firewall deployed in a single AZ and traffic flow for a workload in a private subnet (Filter and deny access to www.bing.com)
+![Screenshot (953)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/88b7fedb-d22e-4330-8526-fd2fbbe4ef1e)
