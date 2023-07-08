@@ -65,13 +65,13 @@ resource "aws_lb_target_group" "SSH" {
   port            = 22
   protocol        = "TCP"
   vpc_id          = aws_vpc.Provider_VPC.id
-  target_type     = "instance"
+  target_type     = "ip"
   ip_address_type = "ipv4"
 }
 
 resource "aws_lb_target_group_attachment" "SSH" {
   target_group_arn = aws_lb_target_group.SSH.arn
-  target_id        = aws_instance.Provider_VPC_Private_Instance.id
+  target_id        = "172.16.1.10"
   port             = 22
 }
 
