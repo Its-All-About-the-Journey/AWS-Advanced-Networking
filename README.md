@@ -66,3 +66,8 @@ img src: AWS
 # Lab 13
 ## AWS Network Firewall deployed in a single AZ and traffic flow for a workload in a private subnet (Filter and deny access to www.bing.com)
 ![Screenshot (953)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/88b7fedb-d22e-4330-8526-fd2fbbe4ef1e)
+
+# Lab 14
+## Centralized Firewall Endpoint using Transit Gateway
+![Screenshot (954)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/65c5e3f0-522f-4b7f-8399-7f661c82144b)
+
