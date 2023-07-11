@@ -69,5 +69,5 @@ img src: AWS
 
 # Lab 14
 ## Centralized Firewall Endpoint using Transit Gateway
-![Screenshot (954)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/65c5e3f0-522f-4b7f-8399-7f661c82144b)
+![Screenshot (956)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/9b06526b-8b3e-46b1-91dd-2b2f892a6bde)
 
