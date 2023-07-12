@@ -71,3 +71,7 @@ img src: AWS
 ## Centralized Firewall Endpoint using Transit Gateway
 ![Screenshot (956)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/9b06526b-8b3e-46b1-91dd-2b2f892a6bde)
 
+# Lab 15
+## Subnet Sharing using Resource Access Manager
+![Screenshot (959)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/977f2dc5-7c80-4b6d-8bef-17354997ffab)
+
