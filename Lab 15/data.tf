@@ -13,7 +13,7 @@ data "aws_vpc_endpoint" "Network_Firewall_Endpoint" {
 }
 
 # Verifies if the VPC is available in Account B
-data "aws_vpc" "Shared_VPC_Acct_2" {
+data "aws_vpc" "Shared_VPC_Acct_B" {
   provider = aws.Account_B
   id = aws_vpc.Shared_VPC.id
 }
