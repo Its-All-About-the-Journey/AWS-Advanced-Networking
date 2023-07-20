@@ -2,7 +2,7 @@
 interface Tunnel 1
  ip address 169.254.6.1 255.255.255.248
  tunnel source GigabitEthernet 1
- tunnel destination 172.19.1.1
+ tunnel destination 192.0.2.1
 
 
 router bgp 64512
@@ -25,7 +25,7 @@ router bgp 64512
 interface Tunnel 1
  ip address 169.254.7.1 255.255.255.248
  tunnel source GigabitEthernet 1
- tunnel destination 172.20.1.1
+ tunnel destination 192.0.2.2
 
 
 router bgp 64512
