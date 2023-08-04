@@ -1,6 +1,6 @@
 # END TO END ENCRYPTION USING AWS NLB running TCP LISTNERS
 
-This repository contains a Terraform project that sets up a network architecture with load balancing and deploys instances in two Availability Zones (AZs) in the AWS US West 2 region.
+This repository contains a Terraform project that sets up a network architecture with load balancing and deploys instances in two Availability Zones (AZs) in the AWS US West 2 region. It encrypts traffic end to end. One at the NLB Listening for HTTPS and running TCP, and another on the server which generates a self-signed SSL certificate.
 
 ## Terraform Files
 The project consists of the following Terraform files:
