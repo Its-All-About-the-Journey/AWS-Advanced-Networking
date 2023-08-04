@@ -30,11 +30,11 @@ Install Terraform: Ensure you have Terraform installed on your system. You can d
 
 Configuration: Update the variable.tf file with your specific values, such as the hosted_zone_id for Route53.
 
-Initialize Terraform: Run terraform init in the project directory to initialize the working directory and download the required provider plugins.
+Initialize Terraform: Run `terraform init` in the project directory to initialize the working directory and download the required provider plugins.
 
-Review the Plan: Run terraform plan to see a preview of the changes Terraform will make to the infrastructure.
+Review the Plan: Run `terraform plan` to see a preview of the changes Terraform will make to the infrastructure.
 
-Apply the Changes: If the plan looks good, apply the changes with terraform apply. Confirm the changes when prompted.
+Apply the Changes: If the plan looks good, apply the changes with `terraform apply`. Confirm the changes when prompted.
 
 Access Web Pages: Once the Terraform deployment is complete, you can access the Marketing and Sales department web pages using the public IP addresses or DNS names provided in the output.
 
@@ -50,7 +50,7 @@ The terraform.tf file specifies a local backend. For production usage, consider 
 Ensure that you have appropriate AWS credentials and permissions to create the required resources.
 
 ## Clean Up
-To remove the infrastructure and clean up resources, run terraform destroy in the project directory. Confirm the destruction when prompted.
+To remove the infrastructure and clean up resources, run `terraform destroy` in the project directory. Confirm the destruction when prompted.
 
 Remember that destroying the resources is irreversible and will result in data loss.
 
