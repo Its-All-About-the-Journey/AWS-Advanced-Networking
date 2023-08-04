@@ -11,7 +11,7 @@ instances.tf: Creates AWS EC2 instances in two fleets, "Public_Instances_Fleet_1
 
 marketing.sh: Bash script that configures the web server and generates a self-signed SSL certificate for the Marketing department's web page.
 
-networking.tf: Sets up the VPC, internet gateway, subnets, and route table. It also configures a Network Load Balancer (NLB) with two target groups for the Marketing and Sales departments.
+networking.tf: Sets up the VPC, internet gateway, subnets, and route table. It also configures a Network Load Balancer (NLB) with two target groups for the Marketing and Sales departments. A Route 53 record is also created.
 
 output.tf: Defines output variables that display public IP addresses for the instances and DNS information for the Marketing and Sales web pages.
 
