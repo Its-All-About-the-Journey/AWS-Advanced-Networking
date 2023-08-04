@@ -17,7 +17,7 @@ output.tf: Defines output variables that display public IP addresses for the ins
 
 sales.sh: Bash script similar to marketing.sh but for the Sales department's web page.
 
-security.tf: Creates an AWS security group to allow SSH, HTTPS, and ICMP inbound traffic.
+security.tf: Creates an AWS security group to allow SSH, HTTPS, and ICMP inbound traffic. It also generates flow logs of the NLB ENI to check that traffics to the server are encrypted.
 
 terraform.tf: Contains backend configuration for local state management and defines the required AWS provider version.
 
