@@ -33,6 +33,10 @@ I decided to improve my diagrams by removing unimportant labels.
 ## Create an Application Load Balancer and 4 instances in different AZs
 ![Screenshot (916)](https://user-images.githubusercontent.com/30233365/232566972-248fdcf3-7f0d-4117-a1d1-24768c92416a.png)
 
+# LAB 6b
+## END TO END ENCRYPTION USING AWS NLB running TCP LISTNERS
+![Screenshot (966)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/3a2c44fb-5c5b-4fb1-8a66-f26fbea1590e)
+
 # Lab 7
 ## Client VPN Configuration and VPC Peering Across and Within Accounts
 ![Screenshot (927)](https://user-images.githubusercontent.com/30233365/235446505-66068163-78f7-4db5-a0ff-5431dce76273.png)
