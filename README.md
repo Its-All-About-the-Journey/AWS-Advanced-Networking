@@ -34,8 +34,12 @@ I decided to improve my diagrams by removing unimportant labels.
 ![Screenshot (916)](https://user-images.githubusercontent.com/30233365/232566972-248fdcf3-7f0d-4117-a1d1-24768c92416a.png)
 
 # LAB 6b
-## END TO END ENCRYPTION USING AWS NLB running TCP LISTNERS
+## End-to-End Encryption Using AWS NLB running TCP Listeners
 ![Screenshot (966)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/3a2c44fb-5c5b-4fb1-8a66-f26fbea1590e)
+
+# Lab 6c
+## Terminate Encryption to AWS ALB
+![Screenshot (967)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/83f5b53e-b8f2-48fc-89ab-7640b6e5f8dc)
 
 # Lab 7
 ## Client VPN Configuration and VPC Peering Across and Within Accounts
