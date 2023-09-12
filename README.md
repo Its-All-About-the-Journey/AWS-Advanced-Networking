@@ -83,3 +83,6 @@ img src: AWS
 ## Subnet Sharing using Resource Access Manager
 ![Screenshot (959)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/977f2dc5-7c80-4b6d-8bef-17354997ffab)
 
+# Lab 16
+## Deploy a Simple EKS Cluster
+![Screenshot (971)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/19315d27-84ed-422f-8c33-7b301d67e05e)
