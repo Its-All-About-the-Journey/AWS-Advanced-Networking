@@ -1,0 +1,5 @@
+aws eks update-kubeconfig --name demo
+
+kubectl apply -f K8s
+
+kubectl get pods
