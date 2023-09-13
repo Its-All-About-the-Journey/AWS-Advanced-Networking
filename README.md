@@ -1,7 +1,3 @@
-## Extra Documentations
-https://dev.to/charlesuneze
-It only contains from Lab 1-3. Had to leave it and document more in my code, and also focus more on Github.
-
 ## Full Notes
 https://satin-sorrel-fbf.notion.site/AWS-Certified-Advanced-Networking-Specialty-ANS-C01-Exam-Guide-43b36925721a418f9d541cd2f42f1699?pvs=4
 
