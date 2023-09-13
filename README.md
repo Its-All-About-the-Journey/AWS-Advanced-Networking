@@ -83,4 +83,6 @@ img src: AWS
 ## Deploy a Simple EKS Cluster
 ![Screenshot (974)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/ba611a34-9358-42bd-9860-d68e8a93c5bc)
 
-
+# Lab 17
+## Create an Application Load Balancer with target-group level stickiness configured 
+![Screenshot (916)](https://user-images.githubusercontent.com/30233365/232566972-248fdcf3-7f0d-4117-a1d1-24768c92416a.png)
