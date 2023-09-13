@@ -85,4 +85,6 @@ img src: AWS
 
 # Lab 16
 ## Deploy a Simple EKS Cluster
-![Screenshot (973)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/e6fb0a6c-b9b8-45fe-ac74-7126d2273e8d)
+![Screenshot (974)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/ba611a34-9358-42bd-9860-d68e8a93c5bc)
+
+
