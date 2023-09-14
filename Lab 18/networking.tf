@@ -67,9 +67,16 @@ resource "aws_vpc_endpoint_service" "GWLBE-Service" {
   gateway_load_balancer_arns = [aws_lb.My_GWLB.arn]
 }
 
-resource "aws_vpc_endpoint" "GWLBE" {
+resource "aws_vpc_endpoint" "GWLBE1" {
   service_name      = aws_vpc_endpoint_service.GWLBE-Service.service_name
-  subnet_ids        = [aws_subnet.GWLBE1_AZ_2A.id, aws_subnet.GWLBE2_AZ_2B.id]
+  subnet_ids        = [aws_subnet.GWLBE1_AZ_2A.id]
+  vpc_endpoint_type = aws_vpc_endpoint_service.GWLBE-Service.service_type
+  vpc_id            = aws_vpc.Workload_VPC.id
+}
+
+resource "aws_vpc_endpoint" "GWLBE2" {
+  service_name      = aws_vpc_endpoint_service.GWLBE-Service.service_name
+  subnet_ids        = [aws_subnet.GWLBE2_AZ_2B.id]
   vpc_endpoint_type = aws_vpc_endpoint_service.GWLBE-Service.service_type
   vpc_id            = aws_vpc.Workload_VPC.id
 }
