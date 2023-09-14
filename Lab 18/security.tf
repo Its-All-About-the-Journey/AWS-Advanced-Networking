@@ -7,15 +7,6 @@ resource "aws_ec2_instance_connect_endpoint" "APP1" {
   }
 }
 
-resource "aws_ec2_instance_connect_endpoint" "APP2" {
-  subnet_id          = aws_subnet.APP2_AZ_2B.id
-  security_group_ids = [aws_security_group.Workload_VPC_SG.id]
-
-  tags = {
-    name = "APP2"
-  }
-}
-
 resource "aws_security_group" "Workload_VPC_SG" {
   name        = "Workload_VPC_SG"
   description = "Allow SSH, HTTP and HTTPS and ICMP inbound traffic"
