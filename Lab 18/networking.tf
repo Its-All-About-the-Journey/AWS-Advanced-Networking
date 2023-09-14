@@ -86,12 +86,12 @@ resource "aws_route_table" "IGW_RT" {
 
   route {
     cidr_block = aws_subnet.GWLBE1_AZ_2A.cidr_block
-    vpc_endpoint_id = aws_vpc_endpoint.GWLBE.id
+    vpc_endpoint_id = aws_vpc_endpoint.GWLBE1.id
   }
 
   route {
     cidr_block = aws_subnet.GWLBE2_AZ_2B.cidr_block
-    vpc_endpoint_id = aws_vpc_endpoint.GWLBE.id
+    vpc_endpoint_id = aws_vpc_endpoint.GWLBE2.id
   }
 
   tags = {
@@ -127,32 +127,40 @@ resource "aws_route_table_association" "GWLBE_RTA_AZ_2B" {
   route_table_id = aws_route_table.GWLBE_RT.id
 }
 
-resource "aws_route_table" "APP_RT" {
+resource "aws_route_table" "APP_RT1" {
   vpc_id = aws_vpc.Workload_VPC.id
 
   route {
     cidr_block = "0.0.0.0/0"
-    vpc_endpoint_id = aws_vpc_endpoint.GWLBE.id
-  }
-
-  route {
-    cidr_block = "0.0.0.0/0"
-    vpc_endpoint_id = aws_vpc_endpoint.GWLBE.id
+    vpc_endpoint_id = aws_vpc_endpoint.GWLBE1.id
   }
 
   tags = {
-    Name = "APP_RT"
+    Name = "APP_RT1"
+  }
+}
+
+resource "aws_route_table" "APP_RT2" {
+  vpc_id = aws_vpc.Workload_VPC.id
+
+  route {
+    cidr_block = "0.0.0.0/0"
+    vpc_endpoint_id = aws_vpc_endpoint.GWLBE2.id
+  }
+
+  tags = {
+    Name = "APP_RT2"
   }
 }
 
 resource "aws_route_table_association" "APP_RTA_AZ_2A" {
   subnet_id      = aws_subnet.APP1_AZ_2A.id
-  route_table_id = aws_route_table.GWLBE_RT.id
+  route_table_id = aws_route_table.APP_RT1.id
 }
 
 resource "aws_route_table_association" "APP_RTA_AZ_2B" {
   subnet_id      = aws_subnet.APP2_AZ_2B.id
-  route_table_id = aws_route_table.GWLBE_RT.id
+  route_table_id = aws_route_table.APP_RT2.id
 }
 
 #########################################################################
@@ -208,7 +216,7 @@ resource "aws_autoscaling_group" "ASG" {
 }
 
 # Create a new ALB Target Group attachment
-resource "aws_autoscaling_attachment" "ASG-attachment" {
+resource "aws_autoscaling_attachment" "ASG-attachmente" {
   autoscaling_group_name = aws_autoscaling_group.ASG.id
   lb_target_group_arn    = aws_lb_target_group.FW.arn
 }
