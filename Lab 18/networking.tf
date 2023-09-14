@@ -210,7 +210,6 @@ resource "aws_lb" "My_GWLB" {
   name               = "My-GWLB"
   internal           = false
   load_balancer_type = "gateway"
-  security_groups = [ aws_security_group.Security_VPC_SG.id ]
   subnets = [ aws_subnet.GWLB_AZ_2A.id, aws_subnet.GWLB_AZ_2B.id ]
 
   enable_deletion_protection = false
