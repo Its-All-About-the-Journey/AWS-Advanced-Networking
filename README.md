@@ -86,3 +86,7 @@ img src: AWS
 # Lab 17
 ## Create an Application Load Balancer with target-group level stickiness configured 
 ![Screenshot (916)](https://user-images.githubusercontent.com/30233365/232566972-248fdcf3-7f0d-4117-a1d1-24768c92416a.png)
+
+# Lab 18
+## Deploy a Fortinet Firewall Behind a Gateway Load Balancer
+![Screenshot (975)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/bbca1ef7-5daf-41a7-a5e3-22a22faf0ab5)
