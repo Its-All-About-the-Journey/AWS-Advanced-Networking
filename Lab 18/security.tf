@@ -1,5 +1,5 @@
 resource "aws_ec2_instance_connect_endpoint" "APP1" {
-  subnet_id          = aws_subnet.APP1_AZ_2A.id
+  subnet_id          = aws_subnet.Private.id
   security_group_ids = [aws_security_group.Workload_VPC_SG.id]
 
   tags = {
@@ -97,6 +97,22 @@ resource "aws_security_group" "Security_VPC_SG" {
     description = "Geneve into VPC"
     from_port   = 6081
     to_port     = 6081
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = "Forti MGT into VPC"
+    from_port   = 541
+    to_port     = 541
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = "Forti MGT into VPC"
+    from_port   = 3000
+    to_port     = 3000
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }

@@ -1,18 +1,14 @@
-output "My_App_LB_DNS" {
-  value = "${aws_lb.My_GWLB.dns_name}"
+output "APP" {
+    value = aws_instance.APP.id
 }
 
-output "APP1" {
-    value = aws_instance.APP1.id
+output "FW1_id" {
+    value = aws_instance.FW1.id
 }
 
-output "APP2" {
-    value = aws_instance.APP2.id
-}
-
-output "Security1" {
-    value = aws_instance.Security1.public_ip
+output "FW1" {
+    value = aws_instance.FW1.public_ip
 }
 
 # SSH into instance
-# aws ec2-instance-connect ssh --instance-id i-0e094c49ff7b697cd
+# aws ec2-instance-connect ssh --instance-id i-05e178c03cd3c0a20
