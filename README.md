@@ -97,5 +97,4 @@ img src: AWS
 
 # Lab 20
 ## Traffic Mirroring Between VPCs
-![Screenshot (977)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/fc10b9a5-9470-444c-8469-70115cc91123)
-
+![Screenshot (979)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/5b97351e-6e1e-45aa-b820-bf1e35fa3314)
