@@ -98,3 +98,9 @@ img src: AWS
 # Lab 20
 ## Traffic Mirroring Between VPCs
 ![Screenshot (979)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/5b97351e-6e1e-45aa-b820-bf1e35fa3314)
+
+# Lab 21
+## Dual Stack Amazon VPC Internet Connectivity
+![Screenshot (982)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/fadac309-89e5-412a-ba77-8e5f82223c5e)
+
+
