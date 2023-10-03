@@ -101,6 +101,5 @@ img src: AWS
 
 # Lab 21
 ## Dual Stack Amazon VPC Internet Connectivity
-![Screenshot (982)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/fadac309-89e5-412a-ba77-8e5f82223c5e)
-
+![Screenshot (984)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/35e2875a-c101-4abc-9fa5-4877ce478105)
 
