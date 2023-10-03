@@ -11,7 +11,7 @@ output "ec2_C" {
 }
 
 # SSH into instance
-# ssh -i "CharlesUneze.pem" ubuntu@34.217.191.236
+# ssh -i "hi.pem" ubuntu@34.217.191.236
 
 # Target Instance ec2_C (start capturing)
 # sudo tcpdump -i ens5 port not 22 -c 2
