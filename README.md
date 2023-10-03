@@ -92,6 +92,10 @@ img src: AWS
 ![Screenshot (975)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/bbca1ef7-5daf-41a7-a5e3-22a22faf0ab5)
 
 # Lab 19
-## Multicast traffic in multi-account environments
+## Multicast Traffic in Multi-Account Environments
 ![Screenshot (976)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/8a4725fd-22c8-4286-87af-73e2c6b06cf3)
+
+# Lab 20
+## Traffic Mirroring Between VPCs
+![Screenshot (977)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/fc10b9a5-9470-444c-8469-70115cc91123)
 
