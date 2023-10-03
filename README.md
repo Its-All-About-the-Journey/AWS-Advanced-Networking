@@ -90,3 +90,8 @@ img src: AWS
 # Lab 18
 ## Deploy a Fortinet Firewall Behind a Gateway Load Balancer
 ![Screenshot (975)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/bbca1ef7-5daf-41a7-a5e3-22a22faf0ab5)
+
+# Lab 19
+## Multicast traffic in multi-account environments
+![Screenshot (976)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/8a4725fd-22c8-4286-87af-73e2c6b06cf3)
+
