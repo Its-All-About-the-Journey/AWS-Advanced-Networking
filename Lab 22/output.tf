@@ -10,5 +10,5 @@ output "globalaccelerator" {
   value = "http://${aws_globalaccelerator_accelerator.accelerator.dns_name}"
 }
 
-# teraform apply -auto-approve; sleep 180 && terraform destroy auto-approve
+# terraform apply -auto-approve; sleep 180 && terraform destroy auto-approve
 
