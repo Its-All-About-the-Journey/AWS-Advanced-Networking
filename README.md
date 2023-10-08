@@ -103,3 +103,6 @@ img src: AWS
 ## Dual Stack Amazon VPC Internet Connectivity
 ![Screenshot (984)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/35e2875a-c101-4abc-9fa5-4877ce478105)
 
+# Lab 22
+# Deploy a Standard Global Accelerator
+![Screenshot (987)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/eabf8550-ee7d-4055-9806-c854271f39fa)
