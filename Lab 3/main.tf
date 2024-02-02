@@ -4,7 +4,6 @@ provider "aws" {
   access_key = ""
   secret_key = ""
   }
-}
 
 resource "aws_vpc" "VPC_A" {
   cidr_block       = "192.168.0.0/16"

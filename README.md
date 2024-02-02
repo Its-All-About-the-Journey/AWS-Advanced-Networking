@@ -35,102 +35,101 @@ These are hashicorp scripts for the labs in the AWS Advanced Networking course o
 
 ## Lab 1
 ### Create an Instance with an Elastic IP Attached using Terraform
-![Screenshot (888)](https://user-images.githubusercontent.com/30233365/221901762-48629ad1-ab9f-4a34-8af5-bbfdfd71c53a.png)
+![Lab 1](./Images/Lab%201.png)
 
 ## Lab 2
 ### Securing your VPC using Public & Private Subnets
-![Screenshot (894)](https://user-images.githubusercontent.com/30233365/222906527-3d37e82c-3bdb-485e-8eea-30d13c0ff388.png)
+![Lab 2](./Images/Lab%202.png)
 
 ## Lab 3
 ### Configuring a Transit Gateway Between 3 VPCs using Terraform
-![Screenshot (898)](https://user-images.githubusercontent.com/30233365/224489068-5d9d55b7-9d8c-4c3e-98e5-0bbf1b48abb2.png)
+![Lab 3](./Images/Lab%203.png)
 
 ## Lab 4
 ### Create a Gateway VPC Endpoint for S3
 I decided to improve my diagrams by removing unimportant labels.
-![Screenshot (908)](https://user-images.githubusercontent.com/30233365/229312291-f0c71c3a-0acf-4cae-92ee-04b81e35833e.png)
+![Lab 4](./Images/Lab%204.png)
 
 ## Lab 5
 ### Create an AWS Private Link
-![Screenshot (915)](https://user-images.githubusercontent.com/30233365/231617757-8d6b4d3f-3c5b-4fe2-a24c-fc0912a7420c.png)
+![Lab 5](./Images/Lab%205.png)
 
 ## Lab 6a
 ### Create an Application Load Balancer and 4 instances in different AZs
-![Screenshot (916)](https://user-images.githubusercontent.com/30233365/232566972-248fdcf3-7f0d-4117-a1d1-24768c92416a.png)
+![Lab 6a](./Images/Lab%206a.png)
 
 ## LAB 6b
 ### End-to-End Encryption Using AWS NLB running TCP Listeners
-![Screenshot (966)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/3a2c44fb-5c5b-4fb1-8a66-f26fbea1590e)
+![Lab 6b](./Images/Lab%206b.png)
 
 ## Lab 6c
 ### Terminate Encryption to AWS ALB
-![Screenshot (967)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/83f5b53e-b8f2-48fc-89ab-7640b6e5f8dc)
+![Lab 6c](./Images/Lab%206c.png)
 
 ## Lab 7
 ### Client VPN Configuration and VPC Peering Across and Within Accounts
-![Screenshot (927)](https://user-images.githubusercontent.com/30233365/235446505-66068163-78f7-4db5-a0ff-5431dce76273.png)
+![Lab 7](./Images/Lab%207.png)
 
 ## Lab 8a
 ### Design Patterns for Cloudfront Using S3 as Origin
-![Screenshot (932)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/0888c996-82cc-488e-b895-2a4f1bf759db)
+![Lab 8a](./Images/Lab%208a.png)
+
 ## Lab 8b
 ### Design Patterns for Cloudfront Using ELB as Origin
-![Screenshot (935)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/9830e934-8f5d-4a69-88dd-07cf1c91659e)
+![Lab 8b](./Images/Lab%208b.png)
 
 ## Lab 9
 ### Transit Gateway Peering
-![Screenshot (941)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/53ac326f-e2ca-4c13-b784-9316fcc35a5f)
+![Lab 9](./Images/Lab%209.png)
 
 ## Lab 10
 ### Simplify SD-WAN connectivity with AWS Transit Gateway Connect
-<img width="913" alt="tgw-connect-ha-v3" src="https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/f67d9cfd-c577-41a6-a1e4-9587f744314c">
-img src: AWS
+![Lab 10](./Images/Lab%2010.png)
 
 ## Lab 11
 ### Centralized inbound traffic inspection using AWS WAF (Filter Inbound IP Addresses)
-![Screenshot (944)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/ea83eaf9-97a3-4a14-ba40-cf183705f8b9)
+![Lab 11](./Images/Lab%2011.png)
 
 ## Lab 12
 ### Centralized NAT gateway using Transit Gateway
-![Capture](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/2466c4aa-c99e-49e7-8730-7efa80ed5891)
-img src: AWS
+![Lab 12](./Images/Lab%2012.png)
 
 ## Lab 13
 ### AWS Network Firewall deployed in a single AZ and traffic flow for a workload in a private subnet (Filter and deny access to www.bing.com)
-![Screenshot (953)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/88b7fedb-d22e-4330-8526-fd2fbbe4ef1e)
+![Lab 13](./Images/Lab%2013.png)
 
 ## Lab 14
 ### Centralized Firewall Endpoint using Transit Gateway
-![Screenshot (986)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/ba1e56be-f977-4bba-9e40-92c5336b4321)
+![Lab 14](./Images/Lab%2014.png)
 
 ## Lab 15
 ### Subnet Sharing using Resource Access Manager
-![Screenshot (959)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/977f2dc5-7c80-4b6d-8bef-17354997ffab)
+![Lab 15](./Images/Lab%2015.png)
 
 ## Lab 16
 ### Deploy a Simple EKS Cluster
-![Screenshot (974)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/ba611a34-9358-42bd-9860-d68e8a93c5bc)
+![Lab 16](./Images/Lab%2016.png)
 
 ## Lab 17
-### Create an Application Load Balancer with target-group level stickiness configured 
-![Screenshot (916)](https://user-images.githubusercontent.com/30233365/232566972-248fdcf3-7f0d-4117-a1d1-24768c92416a.png)
+### Create an Application Load Balancer with target-group level stickiness configured
+![Lab 17](./Images/Lab%2017.png)
 
 ## Lab 18
 ### Deploy a Fortinet Firewall Behind a Gateway Load Balancer
-![Screenshot (975)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/bbca1ef7-5daf-41a7-a5e3-22a22faf0ab5)
+![Lab 18](./Images/Lab%2018.png)
 
 ## Lab 19
 ### Multicast Traffic in Multi-Account Environments
-![Screenshot (976)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/8a4725fd-22c8-4286-87af-73e2c6b06cf3)
+![Lab 19](./Images/Lab%2019.png)
 
 ## Lab 20
 ### Traffic Mirroring Between VPCs
-![Screenshot (979)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/5b97351e-6e1e-45aa-b820-bf1e35fa3314)
+![Lab 20](./Images/Lab%2020.png)
 
 ## Lab 21
 ### Dual Stack Amazon VPC Internet Connectivity
-![Screenshot (984)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/35e2875a-c101-4abc-9fa5-4877ce478105)
+![Lab 21](./Images/Lab%2021.png)
 
 ## Lab 22
 ### Deploy a Standard Global Accelerator
-![Screenshot (987)](https://github.com/Its-All-About-the-Journey/AWS-Advanced-Networking/assets/30233365/eabf8550-ee7d-4055-9806-c854271f39fa)
+![Lab 22](./Images/Lab%2022.png)
